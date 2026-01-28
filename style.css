@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 250px;
+    height: 420px;
+    background-color: rgb(224, 208, 162);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 10px black ;
+}
+.card img{
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+
+h2, h5{
+    text-align: center;
+    margin: 10px;
+}
+
+h5{
+    color: rgb(102, 102, 89);
+}
+
+
+#addbtn{
+    background-color: rgb(37, 37, 116);
+}
+
+#removedbtn{
+    background-color: rgb(247, 2, 2);
+}
+
+#btncontainer{
+    text-align: center;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 2px;
+}
+
