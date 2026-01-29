@@ -3,27 +3,51 @@ let addFriend = document.getElementById('addbtn');
 let removed = document.getElementById('removedbtn');
 
 
-let dublleClick = 0;
 
-addFriend.addEventListener('click', ()=>{
-    if(dublleClick == 0){
-        suggestFriend.innerText = "Friend"
-        suggestFriend.style.color = "green"
-        addFriend.innerText= "Removed"
-        addFriend.style.backgroundColor = "rgb(239, 11, 11)";
+function addFriendchange(){
+    suggestFriend.innerText= "Friend";
+    suggestFriend.style.color= "green";
+    addFriend.style.display="none";
+}
 
-        dublleClick = 1;
-    }
+function removedchange(){
+    suggestFriend.innerText= "suggest Friend";
+    suggestFriend.style.color= "rgb(102, 102, 89)"
+    addFriend.style.display= "inline";
+}
 
-    else{
-        suggestFriend.innerText = "suggest Friend";
-        suggestFriend.style.color = "rgb(102, 102, 89)"
-        addFriend.innerText= "Add Friend"
-        addFriend.style.backgroundColor = "rgb(37, 37, 116)";
-
-        dublleClick = 0;
-    }
+addFriend.addEventListener('click',()=>{
+    addFriendchange();
 })
+
+removed.addEventListener('click',()=>{
+    removedchange();
+})
+
+
+// let dublleclick = 0;
+
+
+// addFriend.addEventListener('click', ()=>{
+//     if(dublleclick == 0){
+//         suggestFriend.innerText= "Friend";
+//          suggestFriend.style.color= "green";
+//          addFriend.innerText= "Remove";
+//          addFriend.style.backgroundColor= "rgb(247, 2, 2)";
+
+
+//          dublleclick= 1;
+
+//     }else{
+//         suggestFriend.innerText= "Suggest Friend";
+//          suggestFriend.style.color= "brown";
+//          addFriend.innerText= "Add Friend";
+//          addFriend.style.backgroundColor= " rgb(37, 37, 116)";
+
+//          dublleclick = 0;
+//     }
+// })
+
 
 
 
